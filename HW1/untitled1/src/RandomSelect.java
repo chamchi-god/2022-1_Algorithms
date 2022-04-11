@@ -7,8 +7,8 @@ public class RandomSelect {
 
     private int rSort(int[] array, int p, int r, int k) { //p는 배열의 마지막 시작지점, r은 배열의 마지막, k는 k번째 작은 수
         Random rand = new Random();
-        int tmp;
         int q = p + rand.nextInt(r-p+1);
+        int tmp;
         int pivot = array[q];
         tmp = array[q]; array[q] = array[r]; array[r] = tmp;
         int i = p;
